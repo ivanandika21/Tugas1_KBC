@@ -1,3 +1,6 @@
+
+# Ivan Andika Surya 672019171
+# 20 Februari 2020
 import numpy as np
 
 graf = {
@@ -22,13 +25,13 @@ def tampung(inittial, dari_graf):
         if nodeSaatIni not in sudah:
             sudah.append(nodeSaatIni)
         if nodeSaatIni in dari_graf:
-            for anak in dari_graf[nodeSaatIni]:
-                sedang.append(anak)
+            for node in dari_graf[nodeSaatIni]:
+                sedang.append(node)
     return sudah
 
 def mainnn():
     i = 0
-print("Ivan Andika Surya 672019171")
+print("\nIvan Andika Surya 672019171\n")
 
 if __name__ == "__main__":
     print('Vertexlist : ', end=(' '))
@@ -42,12 +45,10 @@ for i in range(1, len(tampung(initVar, graf))+1):
 
     if tujuan in my_array[i-1]:
         print('Pencarian berhenti, node saat ini adalah tujuan yaitu', end=(' '))
-        print(my_array[i-1])
+        print(my_array[i-1]+'\n')
         break
     print(my_array[i-1])
 
 if tujuan not in my_array[i-1]:
-        print('Pencarian berhenti, tujuan tidak ditemukan!')
-
-print('\n')
+    print('Pencarian berhenti, tujuan tidak ditemukan!\n')
 
